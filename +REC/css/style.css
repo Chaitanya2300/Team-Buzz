@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #f7f7f7, #f7f7f7, #f7f7f7, #ecf4ff, #d3f4ff, #aff7ff, #8cf9ff, #6eeffe, #4be5fe, #00daff, #00bdff, #009cff, #0073ff, #4f35f2) ;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+h1 {
+    letter-spacing: 0.05em;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    padding: 0px 7px;
+    font-size: 42px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    position: sticky;
+    margin-right: 16px;
+}
+
+.nav-element {
+    margin: 0 5px;
+}
+
+button {
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 25px;
+    border: none;
+}
+
+nav img {
+    width: 151px;
+}
+
+.btn {
+    background: #00c9b7;
+    width: 180 px;
+    color: #fff;
+    font-size: 0.97em;
+    letter-spacing: 0.094em;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+    box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+    text-align: center;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    padding-top: 3em;
+}
+.content {
+    text-align: center;
+}
+.content h1 {
+    padding-bottom: 15px;
+    /* text-decoration: 1px underline; */
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #3F48CB;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.ctn {
+    background-color: #3F48CA;
+    color: white;
+    margin-top: 5px;
+}
+
+.box {
+    width: 35%;
+    position: relative;
+    /* text-align: center; */
+}
+.box-heading {
+    text-align: center;
+} 
+
+.tiles-container {
+    padding-bottom: 60px;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 13px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+footer p {
+    /* margin-top: 10px; */
+    padding: 10px 0px;
+    bottom: 0px;
+
+}
+
+content p {
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.ctn {
+    position: relative;
+    margin: 10px auto;
+
+    
+}
+

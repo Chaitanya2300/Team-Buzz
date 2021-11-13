@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #f7f7f7, #f7f7f7, #f7f7f7, #ecf4ff, #d3f4ff, #aff7ff, #8cf9ff, #6eeffe, #4be5fe, #00daff, #00bdff, #009cff, #0073ff, #4f35f2);
+            height: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .details {
+            padding-left: 20px;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0px;
+        }
+
+        .upper {
+            display: flex;
+        }
+
+        .Digital_Data_Container {
+            /* width: 80%; */
+            margin: auto;
+        }
+
+        .tiles_container {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .tile {
+            width: 25%;
+            min-width: 240px;
+            margin: 8px;
+            padding: 10px 10px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px 1px rgb(0 0 0 / 20%);
+            background: #D8E5E9;
+
+        }
+
+        button,
+        .btn-submit,
+        .cursor {
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 25px;
+            border: none;
+            background: #369DB5;
+            width: 180 px;
+            color: rgb(255, 255, 255);
+            font-size: 0.97em;
+            letter-spacing: 0.094em;
+            cursor: pointer;
+            -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            text-align: center;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: uppercase;
+
+        }
+
+        .btn-submit:hover {
+            box-shadow: none;
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 50%;
+            min-width: 276px;
+            margin: -30px auto;
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            background: #f7f7f7;
+
+        }
+
+        .heading {
+            width: 70%;
+        }
+
+        button, .ins-btn{
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 25px;
+            border: none;
+        }
+
+        .ins-btn {
+            background: #00B282;
+            width: 180 px;
+            color: #fff;
+            font-size: 0.97em;
+            letter-spacing: 0.094em;
+            cursor: pointer;
+            -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            text-align: center;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: uppercase;
+        }
+
+        .ins-btn:hover {
+            box-shadow: none;
+        }
+
+        .btn {
+            background: #00c9b7;
+            width: 180 px;
+            color: #fff;
+            font-size: 0.97em;
+            letter-spacing: 0.094em;
+            cursor: pointer;
+            -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            text-align: center;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            box-shadow: none;
+        }
+
+        .log-btn {
+            background: #00B282;
+            width: 180 px;
+            color: #fff;
+            font-size: 0.97em;
+            letter-spacing: 0.094em;
+            cursor: pointer;
+            -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            text-align: center;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: uppercase;
+        }
+
+        .log-btn:hover {
+            box-shadow: none;
+        }
+        hr.shr {
+            width: 80%;
+            margin: auto;
+            border: 1px solid #352B48;
+            column-fill: #352B48;
+        }
+        
+        select, input {
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html"><button class="log-btn ">Logout</button></a>
+    </nav>
+
+    <section style="margin-bottom: 20px">
+        <div class="card">
+
+            <div class="top-logo">
+                <img class="logo" src="../img/logo.jpeg" width="120px" alt="logo">
+            </div>
+            <div class="container">
+
+                <div class="heading">
+                    <h2>Profile</h2>
+                </div>
+                <div class="upper">
+
+                    <div class="image">
+                        <img style="height: 150px; width: 150px; border-radius: 15%;"
+                            src="../img/user_profile_photo.png" alt="">
+                    </div>
+                    <div class="details">
+                        <br>
+                        Name : Johnson <br>
+                        <br>
+                        Date of Birth : 20/05/2003 <br>
+                        <br>
+                        Phone : 99887755412 <br>
+                        <br>
+                        Email : Johnson@gmail.com <br>
+
+                    </div>
+                </div>
+                <div class="extra">
+                    <br>
+                    Address :
+                    <br><br>
+                    <Address style="text-align:left;">
+                        Reva University, Rukmini Knowledge Park,<br><br> Kattigenahalli, SH 104, Srinivasa Nagar,<br>
+                        <br>
+                        Bengaluru,<br><br>
+                        Karnataka 560064
+                    </Address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="shr">
+
+
+    <section style="padding: 50px 0px;">
+        <div class="Digital_Data_Container">
+            <h2>Digital Records </h2>
+            <div class="tiles_container">
+                <div class="tile">
+                    <h3>Certificates</h3>
+                    <p>
+                        admission/
+                        discharge certificates, vaccination certificates, ...
+                    </p>
+                    <a href="../pages/view-b.html"><button class="btn">View</button></a>
+                </div>
+
+                <div class="tile">
+                    <h3>Prescription History</h3>
+                    <p>
+                        view prescription history
+                        <br>
+                    </p>
+                    <br>
+                    <a href="../pages/view-b.html"><button class="btn">View</button></a>
+                </div>
+
+                <div class="tile">
+                    <h3>Reports</h3>
+                    <p>
+                        progress report,
+                        lab test report,
+                        scanning report, ...
+                    </p>
+                    <a href="../pages/view-b.html"><button class="btn">View</button></a>
+                </div>
+
+                <div class="tile">
+                    <h3>Transaction History</h3>
+                    <p>
+                        hospital bills, medicine bills, consultation fees, ...
+                    </p>
+                    <a href="../pages/view-b.html"><button class="btn">View</button></a>
+                </div>
+
+                <div class="tile">
+                    <h3>Hospitals Visited</h3>
+                    <p>
+                        hospital visit history
+                    </p>
+                    <br>
+                    <a href="../pages/view-b.html"><button class="btn">View</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="shr">
+
+    <!-- Insurance -->
+    <section>
+        <div class="container_insurance">
+            <h2>Insurance</h2>
+        </div>
+        <p>
+            To claim insurance fill the details asked in the form below and link the respective documents required for
+            verification.
+        </p>
+        
+       
+        <div class="form_container">
+            <form action="#">
+
+
+                <label for="cars">Choose your insurance company:</label>
+                <select id="cars" name="cars">
+                    <option value="none">Select company</option>
+                    <option value="National Insurance Company Limited">National Insurance Company Limited</option>
+                    <option value="New India Assurance Company Limited">New India Assurance Company Limited</option>
+                    <option value="Bajaj Allianz General Insurance Company Limited">Bajaj Allianz General Insurance
+                        Company Limited</option>
+                    <option value="SBI General Insurance Company Limited">SBI General Insurance Company Limited</option>
+                </select>
+
+                <br><br>
+
+                <label for="policyno">Enter the policy number:</label>
+                <input type="number" placeholder="Policy Number">
+
+                <br><br>
+
+                <label for="category">Select category: </label>
+                <select name="category" id="category" aria-placeholder="select">
+                    <option value="none">Category</option>
+                    <option value="1">Inpatient</option>
+                    <option value="2">Outpatient</option>
+                </select>
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Attach Files</legend>
+                    <br><br>
+                    Upload the bills image: <br><br>
+                    <input class="cursor " type="file" name="fileToUpload" id="fileToUpload">
+                    <input class="cursor  ins-btn" type="button" value="Upload Image" name="submit">
+
+                    <br><br>
+                    Upload the reports: <br><br>
+                    <input class="cursor " type="file" name="fileToUpload" id="fileToUpload">
+                    <input class="cursor  ins-btn" type="button" value="Upload File" name="submit">
+
+                    <br><br>
+                </fieldset>
+
+                <br><br>
+
+                <input class="btn-submit" type="submit" name="submit" id="submit" value="Review & Submit">
+
+
+            </form>
+        </div>
+
+    </section>
+   
+    
+</body>
+
+</html>

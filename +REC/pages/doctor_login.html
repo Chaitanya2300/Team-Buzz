@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+        body {
+            background-image: linear-gradient(to bottom, #f7f7f7, #f7f7f7, #f7f7f7, #ecf4ff, #d3f4ff, #aff7ff, #8cf9ff, #6eeffe, #4be5fe, #00daff, #00bdff, #009cff, #0073ff, #4f35f2);
+            min-height: 100vh;
+            height: 100%;
+            background-repeat: no-repeat;
+            font-family: 'Baloo Bhai 2', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: #f7f7f7;
+            width: 480px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+        }
+        .top-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 480px;
+            flex-direction: column;
+
+        }
+
+        .top-logo img {
+            width: 150px;
+        }
+
+        footer {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-top: 18 em;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 7px;
+            border: 1px solid black;
+
+        }
+
+        button {
+            padding: 5px 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 25px;
+            border: none;
+        }
+
+        .btn {
+            background: #00c9b7;
+            width: 180 px;
+            color: #fff;
+            font-size: 0.97em;
+            letter-spacing: 0.094em;
+            cursor: pointer;
+            -webkit-box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+            text-align: center;
+            margin: 0 auto;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="top-logo">
+                <img class="logo" src="../img/logo.jpeg" width="120px" alt="logo">
+                <h2 style="text-align: center; font-size: 25px;">“Improving India's Digital Health Ecosystem”</h2>
+            </div>
+            <form action="doctor_page.html" method="get">
+                <label for="uname">Username :</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <br><br>
+                <label for="psw">Password :</label>
+                <input type="password" name="psw" placeholder="Password" required>
+                <br><br>
+                <a href="../pages/doctor_page.html"><button class="btn" type="submit">Login</button></a>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </form>
+        </div>
+        <p
+            style="text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; ">
+            By signing up you agree to our Terms of Service and Privacy Policy
+        </p>
+    </div>
+</body>
+
+</html>
